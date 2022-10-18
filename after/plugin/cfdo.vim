@@ -26,7 +26,7 @@ endfunction
 
 
 function s:after_exec_action()
-    set eventignore=get(s:cache_status, 'eventignore')
+    execute 'set eventignore=' . get(s:cache_status, 'eventignore')
     let g:ale_fix_on_save = get(s:cache_status, 'ale_fix_on_save')
     let g:ale_enabled = get(s:cache_status, 'ale_enabled')
 endfunction
