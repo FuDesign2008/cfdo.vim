@@ -1,18 +1,28 @@
 # cfdo.vim
 
-Wrapper for cdo, cfdo, ldo, lfdo, bufdo, tabdo, argdo, windo
+> Wrapper for cdo, cfdo, ldo, lfdo, bufdo, tabdo, argdo, windo
 
 ## commands
 
-Before calling `cfdo`, something (e.g `:ALEDisable`) should be executed. After calling `cfdo`, the status should be reverted (e.g `:ALEEnable`)
+For better performance, before calling `cfdo`/`cdo`/..., the fowlloing status will be set:
 
-| command | original command |
-| :------ | :--------------- |
-| Cdo     | cdo              |
-| Cfdo    | cfdo             |
-| Ldo     | Ldo              |
-| Lfdo    | Lfdo             |
-| Bufdo   | bufdo            |
-| Tabdo   | tabdo            |
-| Argdo   | argdo            |
-| Windo   | windo            |
+```viml
+set eventignore=all
+let g:ale_fix_on_save=0
+let g:ale_enabled=0
+```
+
+After calling `cfdo`/`cfo`/..., the status should be restored as before calling.
+
+The fowlloing commands is supported.
+
+| wrapper command | original command |
+| :-------------- | :--------------- |
+| `Cdo`           | `cdo`            |
+| `Cfdo`          | `cfdo`           |
+| `Ldo`           | `Ldo`            |
+| `Lfdo`          | `Lfdo`           |
+| `Bufdo`         | `bufdo`          |
+| `Tabdo`         | `tabdo`          |
+| `Argdo`         | `argdo`          |
+| `Windo`         | `windo`          |
