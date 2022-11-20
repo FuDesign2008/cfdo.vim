@@ -2,6 +2,8 @@
 
 > Wrapper for cdo, cfdo, ldo, lfdo, bufdo, tabdo, argdo, windo
 
+## Deprecated, use https://github.com/FuDesign2008/only.vim instead
+
 ## commands
 
 For better performance, before calling `cfdo`/`cdo`/..., the fowlloing status will be set:
@@ -20,8 +22,8 @@ The fowlloing commands is supported.
 | :-------------- | :--------------- |
 | `Cdo`           | `cdo`            |
 | `Cfdo`          | `cfdo`           |
-| `Ldo`           | `Ldo`            |
-| `Lfdo`          | `Lfdo`           |
+| `Ldo`           | `ldo`            |
+| `Lfdo`          | `lfdo`           |
 | `Bufdo`         | `bufdo`          |
 | `Tabdo`         | `tabdo`          |
 | `Argdo`         | `argdo`          |
